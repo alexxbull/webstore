@@ -1,0 +1,104 @@
+@import "./variables.css";
+
+.main-nav {
+    background: var(--green);
+}
+
+.side-nav {
+    background: var(--white);
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    padding-top: 60px;
+    position: fixed;
+    transition: 0.3s;
+    width: 0;
+    z-index: 1;
+}
+
+.side-nav-close-btn {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--darkGray);
+    font-size: 1.75rem;
+    margin-left: auto;
+}
+
+.side-nav-icon {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 4px;
+}
+
+.side-nav-icon__line {
+    background: var(--darkGray);
+    height: 0.3rem;
+    width: 2.25rem;
+    margin-top: 4px;
+}
+
+.main-nav__menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav__menu-item {
+    margin-left: 8px;
+}
+
+.main-nav__menu-item-link,
+.main-nav__menu-item-link:visited {
+    border: none;
+    color: var(--black);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.25rem;
+    outline: none;
+    text-decoration: none;
+}
+
+.main-nav__menu-item-link {
+    text-decoration: none;
+}
+
+@media(min-width: 40rem) {
+    .side-nav-icon {
+        display: none;
+    }
+
+    .side-nav {
+        background: none;
+        height: auto;
+        position: static;
+        width: auto;
+        z-index: auto;
+    }
+
+    .side-nav-close-btn {
+        display: none;
+    }
+
+    .main-nav__menu {
+        flex-direction: row;
+        height: 2.5vh;
+        padding: 8px;
+    }
+
+    .main-nav__menu-item-link,
+    .main-nav__menu-item-link:visited {
+        color: var(--white);
+        font-size: 1.05rem;
+    }
+
+
+    .main-nav__menu-item-link:hover,
+    .main-nav__menu-item-link:visited:hover {
+        border-bottom: 2px solid var(--white);     
+    }
+}
