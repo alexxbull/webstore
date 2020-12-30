@@ -1,0 +1,50 @@
+main {
+    font-size: 1rem;
+    padding: 8px;
+}
+
+.product-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-form label,
+.product-form input,
+.product-form textarea {
+    margin-bottom: 8px;
+}
+
+.product-form input,
+.product-form textarea  {
+    font-size: 0.9rem;
+    padding: 8px;
+}
+
+.product-form__product-price {
+    width: fit-content;
+}
+
+.product-form__submit-btn {
+    background: var(--white);
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    width: fit-content;
+}
+
+.product-form__submit-btn:hover {
+    color: var(--white);
+    background: var(--green);
+}
+
+@media(min-width: 40rem) {
+    main {
+        margin: 2% 15%;
+    }
+
+    .product-form input,
+    .product-form textarea  {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,18 @@
+<div class="product">
+    <a class="product-link" href="<%= productPage %> ">
+        <%= productName %>
+    </a>
+    <div class="product-photo">
+        <img src="<%= productPhoto %> " alt="Image of <%= productName %>">
+    </div>
+    <div class="product-price">
+        <%= productPrice %>
+    </div>
+    <hr>
+    <div class="action-btns">
+        <button class="action-btn more-info-btn" onclick="window.location.href='<%= productPage %>'">
+            More info
+        </button>
+        <button class="action-btn add-to-cart-btn" onclick="window.location.href='/cart'">Add to cart</button>
+    </div>
+</div>

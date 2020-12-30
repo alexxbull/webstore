@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Book",
+        "price": 10,
+        "photo": "/images/products/default-product.svg",
+        "description": "A medium for recording information in the form of writing or images, typically composed of many pages bound together and protected by a cover."
+    },
+    {
+        "name": "Headphones",
+        "price": 75,
+        "photo": "/images/products/default-product.svg",
+        "description": "A pair of earphones joined by a band placed over the head, for listening to audio signals such as music or speech."
+    },
+    {
+        "name": "Timer",
+        "price": 15,
+        "photo": "/images/products/default-product.svg",
+        "description": "A specialized type of clock used for measuring specific time intervals"
+    },
+    {
+        "name": "Water Bottle",
+        "price": 13.65,
+        "description": "A container that is used to hold water, liquids or other beverages for consumption.",
+        "photo": "/images/products/default-product.svg"
+    },
+    {
+        "name": "Watch",
+        "price": 90,
+        "description": "An impressive portable item that represents the nonstop progression of life. Batteries included.",
+        "photo": "/images/products/default-product.svg"
+    }
+]

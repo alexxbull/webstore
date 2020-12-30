@@ -4,20 +4,22 @@
     background: var(--green);
 }
 
-.side-nav {
-    background: var(--white);
-    height: 100%;
-    left: 0;
-    top: 0;
-    overflow: auto;
-    padding-top: 60px;
-    position: fixed;
-    transition: 0.3s;
-    width: 0;
-    z-index: 1;
+.main-nav-icon {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 4px;
+    margin-bottom: 4px;
 }
 
-.side-nav-close-btn {
+.main-nav-icon__line {
+    background: var(--darkGray);
+    height: 0.3rem;
+    width: 2.25rem;
+    margin-top: 4px;
+}
+
+.main-nav-close-btn {
     background: none;
     border: none;
     outline: none;
@@ -26,30 +28,25 @@
     margin-left: auto;
 }
 
-.side-nav-icon {
-    background: none;
-    border: none;
-    outline: none;
-    padding: 4px;
-}
-
-.side-nav-icon__line {
-    background: var(--darkGray);
-    height: 0.3rem;
-    width: 2.25rem;
-    margin-top: 4px;
-}
-
 .main-nav__menu {
+    background: var(--white);
     display: flex;
     flex-direction: column;
+    height: 100%;
+    left: 0;
     list-style: none;
     margin: 0;
+    overflow: auto;
     padding: 0;
+    position: fixed;
+    top: 0;
+    transition: 0.3s;
+    width: 0;
+    z-index: 1;
 }
 
 .main-nav__menu-item {
-    margin-left: 8px;
+    padding: 8px;
 }
 
 .main-nav__menu-item-link,
@@ -58,7 +55,7 @@
     color: var(--black);
     cursor: pointer;
     display: inline-block;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     outline: none;
     text-decoration: none;
 }
@@ -68,19 +65,23 @@
 }
 
 @media(min-width: 40rem) {
-    .side-nav-icon {
+    .main-nav {
+        background: var(--green);
+    }
+
+    .main-nav__menu {
+        background: var(--green);
+        height: auto;
+        position: static;
+        width: 100%;
+        z-index: auto;
+    }
+    
+    .main-nav-icon {
         display: none;
     }
 
-    .side-nav {
-        background: none;
-        height: auto;
-        position: static;
-        width: auto;
-        z-index: auto;
-    }
-
-    .side-nav-close-btn {
+    .main-nav-close-btn {
         display: none;
     }
 
@@ -88,6 +89,11 @@
         flex-direction: row;
         height: 2.5vh;
         padding: 8px;
+    }
+
+    .main-nav__menu-item {
+        margin-left: 16px;
+        padding: 0;
     }
 
     .main-nav__menu-item-link,

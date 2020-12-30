@@ -1,16 +1,16 @@
-const sideNav = document.querySelector('.side-nav')
+const mainNavMenu = document.querySelector('.main-nav__menu')
 
-const openSideNav = () => {
-    sideNav.style.width = '70vw'
+const openMainNav = () => {
+    mainNavMenu.style.width = '70vw'
 }
 
-const closeSideNav = () => {
-    sideNav.style.width = '0'
+const closeMainNav = () => {
+    mainNavMenu.style.width = '0'
 }
 
-const sideNavIcon = document.querySelector('.side-nav-icon')
-sideNavIcon.addEventListener('click', openSideNav)
+const mainNavIcon = document.querySelector('.main-nav-icon')
+mainNavIcon.addEventListener('click', openMainNav)
 
 
-const sideNavCloseBtn = document.querySelector('.side-nav-close-btn')
-sideNavCloseBtn.addEventListener('click', closeSideNav)
+const mainNavCloseBtn = document.querySelector('.main-nav-close-btn')
+mainNavCloseBtn.addEventListener('click', closeMainNav)

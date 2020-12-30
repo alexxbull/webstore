@@ -3,8 +3,8 @@ import path from 'path'
 import express from 'express'
 
 import { storeRoutes } from './routes/store'
+import { adminRoutes } from './routes/admin'
 import { get404 } from './controllers/error'
-
 
 const app = express()
 
@@ -27,6 +27,7 @@ app.use(express.urlencoded({ extended: false }))
 
 // add routes
 app.use(storeRoutes)
+app.use('/admin', adminRoutes)
 app.use(get404)
 
 
